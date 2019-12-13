@@ -1,0 +1,23 @@
+{{#if errors}}
+{{#each errors}}
+<input class="inputanimationMsg" type="text" placeholder="{{msg}}" name="email">
+
+{{/each}}
+{{/if}}
+
+
+{{#if successMessage}}
+{{!-- <span id="cardMsg" class="card-panel green lighten-2">{{successMessage}}</span> --}}
+<input  class="inputanimationSucc"  type="text" placeholder="{{successMessage}}" name="email">
+{{/if}}
+
+{{#if errorMessageMsg}}
+{{!-- <span id="cardMsg" class="card-panel red lighten-2">{{errorMessage}}</span> --}}
+<input  class="inputanimation"  type="text" placeholder="{{errorMessage}}" name="email">
+{{/if}}
+
+
+{{#if error}}
+{{!-- <span id="cardMsg" class="card-panel red lighten-2">{{error}}</span> --}}
+<input class="inputanimationMsg"  type="text" placeholder="{{error}}" name="email">
+{{/if}}
